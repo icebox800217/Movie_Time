@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Time</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        body {
+            height: 600px;
+        }
+        
+        ul {
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            width: 350px;
+            height: 300px;
+            padding: 20px;
+            background-color: rgb(0, 204, 255);
+            border-radius: 20px 20px;
+            box-shadow: 5px 5px rgb(44, 102, 211);
+        }
+        
+        h3 {
+            text-align: center;
+        }
+        
+        select {
+            height: 40px;
+            width: 250px;
+            margin: 10px 5px 10px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 全省威秀影城隔週電影新場次公布於每週二晚間23:59 -->
+    <!-- (假設週二整天只能查到：週二 週三 週四) -->
+    <!-- 會開放未來一週(週三會查到：今天到下星期四)之場次 -->
+
+    <form>
+        <ul>
+            <h3>快速訂票</h3>
+            <li><select name="cinema">
+                    <option value="cinema">請選擇影城</option>
+            　<option value="Taipei">台北信義威秀影城</option>
+            　<option value="Taichung">台中大遠百威秀影城</option>
+            　<option value="Tainan">台南大遠百威秀影城</option>
+            　<option value="Kaohsiung">高雄大遠百威秀影城</option>            　
+            </select></li>
+            <li><select name="moive">
+                    <option value="moive">請選擇電影</option>
+                    　<option value="FastAndFurious">(數位)玩命關頭:特別行動</option>
+                    　<option value="LionKing">(數位 英)獅子王</option>
+                    　<option value="SpiderMan">(數位)蜘蛛人:離家日</option>
+                    　<option value="Toys">(數位 英)玩具總動員4</option>            　
+                    </select></li>
+            <li><select name="date" id="selectDate">
+                <option value="date">請選擇日期</option>                                   　
+                            </select></li>
+        </ul>
+
+
+
+    </form>
+    <script type="text/javascript" src="b.js"></script>
+</body>
+
+</html>
